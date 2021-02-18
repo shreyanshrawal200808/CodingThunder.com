@@ -1,0 +1,159 @@
+
+        
+                 <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="icon" type="image/png" href="">  -->
+    <link rel="icon" href="Scoder.png" type="image/gif" sizes="16x16">
+    <title>Learn programming and coding for free with CodeWithShreyansh</title>
+  </head>
+  <body>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="/">CodeWithShreyansh</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="videos.html">Videos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="blogs.html">Blogs</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Me</a>
+                          </li>
+                          
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Sign In
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                    <form name="contact" method="post" action="/profile/signup"><input type="hidden" name="csrfmiddlewaretoken" value="pwKjBNlGOr2uD9nynqrqaY8iwDXNj6ueDVXB1V2TnNbS403X9dh2DQdboVwUFtDk">
+
+                              <div class="form-group">
+                                <label for="uname">Username</label>
+                                <input type="text" class="form-control" id="uname" placeholder="Enter your Name" name="uname">
+                                <br>
+                                <small id="unamehelp" class="form-text text-muted px-1">
+                                  Your unique username must be less than 10 characters (only lowecase letters, numbers & underscores
+                                  allowed) with no spaces
+                                </small>
+                              </div>
+                              <br>
+                              <div class="form-group">
+                                <label for="name">First Name</label>
+                                <input type="text" class="form-control" id="fname" placeholder="Enter your First Name" name="fname">
+                              </div>
+                              <br>
+                              <div class="form-group">
+                                <label for="name">Last Name</label>
+                                <input type="text" class="form-control" id="lname" placeholder="Enter your Last Name" name="lname">
+                              </div>
+                    <br>
+                              <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <div class="mx-0">
+                                  <div class="col-md-8 px-0">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your Email" name="email">
+                                    <small id="otpMessage" class="form-text"></small>
+                                  </div>
+                                  <br>
+                                  <div class="col-md-4 my-1 px-0">
+                                    <button class="btn btn-danger btn-sm mt-2" id="otpbtn">Send OTP</button>
+                                  </div>
+                                </div>
+                    
+                              </div>
+                              <br>
+                              <div class="form-group">
+                                <label for="otp">Enter OTP</label>
+                                <input type="text" class="form-control" id="otp" placeholder="Enter OTP" name="otp">
+                              </div>
+                    <br>
+                              <div class="form-group">
+                                <label for="password">Choose a password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Choose a password" name="password">
+                              </div>
+                              <br>
+                              <div class="form-group">
+                                <label for="password2">Retype a password</label>
+                                <input type="password" class="form-control" id="password2" placeholder="Retype your password"
+                                  name="password2">
+                              </div>
+                              <br>
+                              <div class="g-recaptcha" data-sitekey="6LdvcqwUAAAAACmPYNVoiJA7D84xLSQQt5g9p10m"></div>
+                              <input type="hidden" name="path" value="/contact/">
+                              <button type="submit" class="btn btn-outline-danger mt-2">SignUp</button>
+                        
+                            </form>
+                          </div>
+                    
+                       
+                        </div>
+                      </div>
+                    </div>
+              </div>
+           
+              </div>
+            </div>
+          </div>
+        </div>
+                      </div>
+                    </div>
+          </nav>
+            
+          <div class="container"><h2>  1-  How to make Responsive Navbar in 2mins ? </h2>
+            <p>you can use bootstrap to make responsive navbar in 2 mins it is an online css framework which helps us to make website very quickly.</p><br>
+            <strong>Step 1 :</strong>Open your browser and search getbootstrap.com
+<a  target="_blank" href="https://www.getbootstrap.com"> click here to visit bootstrap</a>
+<br>
+<strong>Step 2 :</strong> Then copy the starter template  by clicking on the copy option and paste it in your favourite IDE  I support Vs code .
+<br><br>
+<br>
+<style>
+ 
+ .img{ 
+   width:80%; 
+   border: 5px solid grey;
+   }
+</style>
+<img src="blogimg1.png" alt="" class="img">
+<br><br>
+<br>
+<strong>Step 3 :</strong> After pasting it in  IDE then again go to bootstrap and choose components option then In components click on navbar .
+<br><br><br>
+<img src="Screenshot (70).png" alt="" class="img">
+<br><br><br>
+<strong>Step 4 : </strong> Click on copy option an passte the navbar in the IDE and your Responsive Navbar is ready.
+</div>
+              
+
+</body>
+</html>
